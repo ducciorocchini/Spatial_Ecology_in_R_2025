@@ -1,4 +1,4 @@
-# Spatial_Ecology_in_R_2025 👾
+# Spatial_Ecology_in_R_2025 👾 📖
 
 <img width="5963" height="4247" alt="distributions-examples" src="https://github.com/user-attachments/assets/1da52da1-86c9-48a0-91e6-233dfc17d5a1" />
 

@@ -1,0 +1,111 @@
+---
+title: "Spatial Ecology in R"
+author: Duccio Rocchini
+format:
+  revealjs:
+    self-contained: true
+editor: visual
+---
+
+# The Professor
+
+## Who am I?
+
+```{r ami, echo=T, eval=T}
+# R: Search Duccio Rocchini
+```
+
+[Quite a difficult question](https://www.google.com/search?q=duccio+rocchini&rlz=1C5CHFA_enIT1141IT1141&oq=duccio+rocchini+&gs_lcrp=EgZjaHJvbWUyDAgAEEUYORiABBiiBDIGCAEQIxgnMgYIAhAjGCcyBwgDEAAYgAQyBggEEEUYPDIGCAUQRRg8MgYIBhBFGDwyBggHEEUYQdIBCDQzNTFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8)
+
+# The course
+
+## Program
+
+[Looking at the page](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2025/535506)
+
+## Reasoning at three different levels
+
+-   Spatial structure of **populations** and population change in time: introduction to poopulation ecology
+
+-   Spatial structure of **communities**: introduction to community ecology and community monitoring metrics
+
+-   Spatial structure of **ecosystems** and functions: exploring the main ecosystem functions
+
+## Populations \| Point Patterns Analysis
+
+```{r pop, echo=T, eval=T}
+library(spatstat)
+plot(bei, cex=.2, pch=19)
+```
+
+## Populations \| Density maps
+
+```{r popde, echo=T, eval=T}
+library(spatstat)
+densitymap <- density(bei)
+plot(densitymap)
+points(bei, cex=.2)
+```
+
+## Communities \| Multivariate analysis
+
+```{r comm, echo=T, eval=T}
+library(vegan)
+data(dune)
+multivar <- decorana(dune)
+plot(multivar)
+```
+
+## Ecosystems
+
+```{r eco, echo=T, eval=T}
+library(imageRy)
+citation("imageRy")
+```
+
+## Using the imageRy package
+
+```{r ima, echo=T, eval=T}
+library(terra)
+library(imageRy)
+m1992 <- im.import("matogrosso_l5_1992219_lrg.jpg")
+```
+
+## Multitemporal analysis
+
+```{r multitemp, echo=T, eval=T}
+library(terra)
+library(imageRy)
+m2006 <- im.import("matogrosso_ast_2006209_lrg.jpg")
+```
+
+## The book
+
+[R Coding for Ecology](https://link.springer.com/book/9783031996641)
+
+## The code
+
+-   [R](https://www.r-project.org/)
+-   [Markdown](https://markdownlivepreview.com/)
+-   [Quarto](https://markdownlivepreview.com/)
+-   [LaTeX](https://www.latex-project.org/)
+
+## First steps
+
+-   Install [R](https://cran.stat.unipd.it/)
+-   Install [RStudio](https://posit.co/download/rstudio-desktop/)
+
+## GitHub account
+
+<https://github.com/ducciorocchini/>
+
+## Artificial intellingence
+
+<https://chatgpt.com/>
+
+# The exam
+
+## Procedure
+
+-   Write a code project in GitHub using MarkDown
+-   Present the project during the exam date

@@ -53,6 +53,21 @@ dev.off()
 cl <- colorRampPalette(c("green", "red", "blue"))
 plot(dmap, col=cl)
 
+cl <- colorRampPalette(c("green", "red", "blue"))(100)
+plot(dmap, col=cl)
+
+# R colors are here:
+# https://r-charts.com/colors/
+
+cln <- colorRampPalette(c("chartreuse1", "brown2", "cyan", "lightblue"))
+plot(dmap, col=cln)
+
+# plot the dmap with two different color ramps one on top of the other
+dev.off()
+
+par(mfrow=c(2,1)) 
+plot(dmap, col=cl)
+plot(dmap, col=cln)
 
 
 

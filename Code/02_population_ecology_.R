@@ -33,6 +33,31 @@ points(bei)
 plot(el)
 points(bei)
 
+# Plotting together the density map and the elevation
+el <- bei.extra[[1]]
+
+# one object is dmap and the other is el
+# how to plot the dmap beside el?
+par(mfrow=c(1,2)) # we will solve this anti-human stuff soon!
+plot(dmap)
+plot(el)
+
+# plot the dmap ontop of the el map
+par(mfrow=c(2,1)) 
+plot(dmap)
+plot(el)
+
+# if you want to close graphical devices this is your friend:
+dev.off()
+
+cl <- colorRampPalette(c("green", "red", "blue"))
+plot(dmap, col=cl)
+
+
+
+
+
+
 
 
 

@@ -6,6 +6,40 @@ library(vegan)
 data(dune)
 head(dune)
 
+# Multivariate analysis
+multivar <- decorana(dune)
+multivar
+
+dcal1 = 3.7004
+dcal2 = 3.1166 
+dcal3 = 1.30055
+dcal4 = 1.47888
+
+total = dcal1 + dcal2 + dcal3 + dcal4
+# or:
+total <- sum(c(dcal1, dcal2, dcal3, dcal4))
+
+percdca1 = dcal1 * 100 / total
+percdca2 = dcal2 * 100 / total
+
+percdca1 + percdca2
+
+plot(multivar)
+
+# Principal component analysis
+multipca <- pca(dune)
+plot(multipca)
+
+
+
+
+
+
+
+
+
+
+
 multivar <- decorana(dune)
 multivar
 

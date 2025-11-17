@@ -4,8 +4,8 @@ library(igraph)
 species <- c("Algae", "Zooplankton", "Small Fish", "Large Fish", "Bird")
 
 interactions <- data.frame(
-  predator = c("Zooplankton", "Small Fish", "Large Fish", "Bird"),
-  prey     = c("Algae", "Zooplankton", "Small Fish", "Small Fish")
+  predator = c("Zooplankton", "Small Fish", "Large Fish", "Bird", "Bird"),
+  prey     = c("Algae", "Zooplankton", "Small Fish", "Small Fish", "Large Fish")
 )
 
 # Create graph

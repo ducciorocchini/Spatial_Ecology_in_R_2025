@@ -54,7 +54,7 @@ for (species in species_list) {
   species_data <- kerinci[kerinci$Sps == species, ]
   
   # Create a density plot for the 'circ' variable of the current species
-  plot(density(species_data$circ), 
+  plot(density(species_data$Timecirc), 
        main = paste("Density Plot of Circumference for", species), 
        xlab = "Circumference")
 }

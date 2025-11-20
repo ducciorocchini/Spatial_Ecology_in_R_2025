@@ -8,21 +8,28 @@ data(kerinci)
 
 circulartime <- kerinci$Time * 2 * pi
 
-kerinci$circ <- kerinci$Time * 2 * pi
+kerinci$Timecirc <- kerinci$Time * 2 * pi
 
 tiger <- kerinci[kerinci$Sps=="tiger",]
 
-tigertime <- tiger$circ
+densityPlot(tiger$Timecirc)
+
+tigertime <- tiger$Timecirc
+
 densityPlot(tigertime)
 
-densityPlot(tiger$circ)
-
-# Exercise: repeat the graph for the macaque
+# Exercise: create a kernel density plot for the species called macaque
 
 macaque <- kerinci[kerinci$Sps=="macaque",]
-macaquetime <- macaque$circ
 
-densityPlot(macaque$circ)
+densityPlot(macaque$Timecirc)
+
+macaquetime <- macaque$Timecirc
+
+densityPlot(macaquetime)
+
+overlapPlot(tigertime, macaquetime)
+
 
 # seeing the overlap between times of different species
 overlapPlot(tigertime, macaquetime)

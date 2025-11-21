@@ -26,4 +26,8 @@ Here is the [University link](https://www.unibo.it/en).
 
 ![AdobeStock_111168015-600x403](https://github.com/user-attachments/assets/37bd9753-e111-4d0f-9225-71615f46afe7)
 
+## Suggested books
+
++ Jensen, J. R. (1996). Introductory digital image processing: a remote sensing perspective.
++ Legendre, P., & Legendre, L. (2012). Numerical ecology (Vol. 24). Elsevier.
 

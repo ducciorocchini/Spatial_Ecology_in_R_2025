@@ -30,8 +30,14 @@ plot(b4, col=cl)
 b8 <- im.import("sentinel.dolomites.b8.tif")
 plot(b8, col=cl)
 
+
+# the multiframe from the CRAN is not properly working, so use the GitHub version:
+im.multiframe <- function(x,y){
+   par(mfrow=c(x,y))
+   }
+
 # Multiframe
-par(mfrow=c(2,2))
+im.multiframe(2,2)
 plot(b2, col=cl)
 plot(b3, col=cl)
 plot(b4, col=cl)

@@ -30,7 +30,7 @@ plot(b2, col=cl)
 plot(b3, col=cl)
 
 # the multiframe from the CRAN is not properly working, so use the GitHub version:
-im.multiframe <- function(x,y){
+duccio <- function(x,y){
    par(mfrow=c(x,y))
    }
 
@@ -69,4 +69,32 @@ plot(b8)
 duccio(1,2)
 plot(b2,b3)
 plot(b2,b8)
+
+# creating colored images
+sent <- c(b2, b3, b4, b8)
+
+# layer 1 = original (from Sentinel-2) b2 = blue
+# layer 2 = original (from Sentinel-2) b3 = green
+# layer 3 = original (from Sentinel-2) b4 = red
+# layer 4 = original (from Sentinel-2) b8 = NIR
+
+# natural color image
+im.plotRGB(sent, r=3, g=2, b=1, title='natural color')
+
+# false color image
+im.plotRGB(sent, r=4, g=3, b=2, title='false color')
+im.plotRGB(sent, r=3, g=4, b=2, title='false color')
+im.plotRGB(sent, r=3, g=2, b=4, title='false color')
+
+duccio(2,2)
+im.plotRGB(sent, r=3, g=2, b=1, title='natural color')
+im.plotRGB(sent, r=4, g=3, b=2, title='false color')
+im.plotRGB(sent, r=3, g=4, b=2, title='false color')
+im.plotRGB(sent, r=3, g=2, b=4, title='false color')
+
+
+im.plotRGB(x, r, g, b, title = "")
+
+
+
 

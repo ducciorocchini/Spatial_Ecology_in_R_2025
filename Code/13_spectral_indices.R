@@ -38,3 +38,27 @@ ndvi2006 <- im.ndvi(m2006, 1, 2)
 
 plot(ndvi1992, col=inferno(100))
 plot(ndvi2006, col=inferno(100))
+
+# range of ndvi
+# 0-100
+# ndvi = (nir - red) / (nir + red) = (100-0)/(100+0) = 1
+# ndvi = (nir - red) / (nir + red) = (0-100)/(0+100) = -1
+# ndvi will always range from -1 to 1
+
+# 0-200
+# ndvi = (nir - red) / (nir + red) = (200-0)/(200+0) = 1
+# ndvi = (nir - red) / (nir + red) = (0-200)/(0+200) = -1
+# ndvi will always range from -1 to 1
+
+
+# 0-100
+# dvi = (nir - red) = (100-0) = 100
+# dvi = (nir - red) = (0-100) = -100
+
+# 0-200
+# dvi = (nir - red) = (200-0) = 200
+# dvi = (nir - red) = (0-200) = -200
+
+
+
+

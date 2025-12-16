@@ -2,6 +2,9 @@
 
 library(terra)
 library(imageRy)
+library(ggridges)
+library(ggplot2)
+
 
 im.list()
 
@@ -11,7 +14,11 @@ EN13 <- im.import("EN_13.png")
 
 difEN = EN01[[1]] - EN13[[1]]
 
-# Example 2: ice melt in Greenland
+# Ridgeline plots
+# import NDVI data
+# im.ridgeline(ndvi, scale=2)
+
+# Example 3: ice melt in Greenland
 
 gr <- im.import("greenland")
 plot(gr[[1]])

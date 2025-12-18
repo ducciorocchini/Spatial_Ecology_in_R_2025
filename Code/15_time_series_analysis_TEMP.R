@@ -81,6 +81,16 @@ plot4 <- im.ridgeline(p2, scale=2)
 
 plot1 + plot2 + plot3 + plot4
 
+# copy paste im.ggplotRGB from imageRy in GitHub
+# https://github.com/ducciorocchini/imageRy/blob/main/R/im.ggplotRGB.R
+
+plot5 <- im.ggplotRGB(p1, 1, 2, 3)
+plot6 <- im.ggplotRGB(p2, 1, 2, 3)
+
+plot5 + plot6 + plot3 + plot4
+
+# you can also download the script with the function and then recall it by
+source("im.ggplotRGB.R")
 
 
 

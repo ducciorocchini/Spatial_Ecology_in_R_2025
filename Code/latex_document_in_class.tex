@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+\usepackage{lineno}
+\usepackage{natbib}
+% \linenumbers
+
+\title{My first document}
+\author{Duccio Rocchini}
+% \date{ }
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Introduction} \label{sec:intro}
+Every year, it's the same and I feel it again
+I'm a loser, no chance to win
+Leaves start falling, comedown is calling
+Loneliness starts sinking in
+But I'm one, I am one
+And I can see that this is me
+And I will be
+You'll all see I'm the one
+Where do you get those blue, blue jeans?
+Faded, patched secret, so tight
+Where do you get that walk, oh so lean
+Your shoes and your shirts all just right.
+
+\subsection{Philosophy of this thesis}
+\noindent Every year, it's the same and I feel it again
+I'm a loser, no chance to win
+Leaves start falling, comedown is calling
+Loneliness starts sinking in
+But I'm one, I am one
+And I can see that this is me
+And I will be
+You'll all see I'm the one
+Where do you get those blue, blue jeans?
+Faded, patched secret, so tight
+Where do you get that walk, oh so lean
+Your shoes and your shirts all just right.
+
+\subsection{Aim}
+Every year, it's the same and I feel it again
+I'm a loser, no chance to win
+Leaves start falling, comedown is calling
+Loneliness starts sinking in
+But I'm one, I am one
+And I can see that this is me
+And I will be
+You'll all see I'm the one
+Where do you get those blue, blue jeans?
+Faded, patched secret, so tight
+Where do you get that walk, oh so lean
+Your shoes and your shirts all just right.
+
+\section{Methods} \label{sec:methods}
+As stated in Section \ref{sec:intro}, in this thesis, I made use of the function related to gravity, as in Equation \ref{eq:newton}.
+
+\begin{equation}
+    F = G \times \frac{m_1 \times m_2}{r^2}
+    \label{eq:newton}
+\end{equation}
+
+The above equation was too simple, and I relied also on Equation \ref{eq:complex}.
+
+\begin{equation}
+    F = \sqrt[3]{G \times \frac{\sqrt{m_1 \times \sqrt{m_2}}}{r^2}}
+    \label{eq:complex}
+\end{equation}
+
+\section{Results and Discussion}
+
+Using the formulas presented in section \ref{sec:methods}, I attained the results shown in Figure \ref{fig:result}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\linewidth]{download.png}
+    \caption{Waves attained in this thesis, blablabla....}
+    \label{fig:result}
+\end{figure}
+
+My results are in line with those attained by \citep{lek}. Instead of just gravity I might have used cellular automata according to \citep{codd}.
+
+\begin{thebibliography}{999}
+
+\bibitem[Lek et al.(1996)]{lek}
+Lek, S., Delacoste, M., Baran, P., Dimopoulos, I., Lauga, J., \& Aulagnier, S. (1996). Application of neural networks to modelling nonlinear relationships in ecology. Ecological modelling, 90(1), 39-52.
+
+\bibitem[Codd(2014)]{codd}
+Codd, E. F. (2014). Cellular automata. Academic press.
+
+\end{thebibliography}
+
+\end{document}
